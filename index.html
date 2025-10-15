@@ -13,7 +13,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-primary sticky-top">
         <div class="container-fluid">
-            <img src="Major_League_Baseball_logo.svg.png" alt="Logo MLB" class="me-2" style="width: 40px; height: 20px;">
+            <img src="Major_League_Baseball_logo.svg.png" alt="Logo MLB" class="me-2"
+                style="width: 40px; height: 20px;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavPrimary"
                 aria-controls="navbarNavPrimary" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,10 +22,25 @@
 
             <div class="collapse navbar-collapse" id="navbarNavPrimary">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">NEWS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">WATCH</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">SCORES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">SCHEDULE</a></li>
+                     <li class="nav-item dropdown">
+                    <a class="nav-link nav-link-custom dropdown-toggle active" href="#" 
+                       role="button" 
+                       data-bs-toggle="dropdown" 
+                       aria-expanded="false">
+                        SCHEDULE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownSchedule">
+                        <li><a class="dropdown-item" href="#">2025 Postseason</a></li>
+                        <li><a class="dropdown-item" href="#">2025 Regular Season</a></li>
+                        <li><a class="dropdown-item" href="#">2025 Spring Training</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">2026 Regular Season</a></li>
+                        <li><a class="dropdown-item" href="#">Historical Schedules</a></li>
+                    </ul>
+                </li>
                     <li class="nav-item"><a class="nav-link" href="#">STATS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">PLAYERS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">PLAY</a></li>
@@ -121,93 +137,153 @@
             <hr class="my-0">
         </section>
         <div class="row mb-3 d-flex">
-            <div class="col-md-8 card">
-                <div class="ratio ratio-16x9">
-                    <img src="ohtani.webp"
-                        alt="Noticia Destacada NLCS" class="img-fluid rounded shadow-sm">
+            <div class="row mb-3 d-flex">
+                <div class="col-md-8  mb-4 d-flex">
+                    <div class="card h-100 p-3 shadow-sm border-0 card-main-feature">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="ohtani.webp" alt="Noticia Destacada NLCS" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <h2 class="h3 fw-bold text-dark mb-2" mt-5>
+                            Ohtani's dominance guides Dodgers into NLCS showdown.
+                        </h2>
+                        <p class="text-muted mt-2">
+                            After a stunning regular season, Shohei Ohtani has taken his game to another level in the
+                            postseason, delivering crucial hits and stellar defense to push the Dodgers past the
+                            divisional round.
+                        </p>
+                        <a href="#" class="btn btn-primary mt-auto align-self-start mt-5">
+                            Read Full Story
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-4 shadow-lg border-light border-2 d-flex flex-column">
+                        <h4 class="fw-bold text-dark mb-4">Latest News</h4>
+                        <ul class="list-unstyled flex-grow-1">
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="me-3 mt-1" style="color: #002D56;">
+                                    <img src="ohtani.webp" alt="" width="20" height="20 rounded-circle">
+                                </div>
+                                <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                    LIVE: Mariners-Blue Jays ALCS Game 2 (FOX)
+                                </a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="me-3 mt-1 rounded-circle bg-primary" style="width: 20px; height: 20px;">
+                                </div>
+                                <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                    Back tightness forces Santander out of Blue Jays' Game 2 lineup
+                                </a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="me-3 mt-1 text-success fw-bold fs-5">S</div>
+                                <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                    'All positives' for Woo, who could be on track for ALCS Game 5
+                                </a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="me-3 mt-1" style="color: #002D56;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-baseball" viewBox="0 0 16 16">
+                                        <path
+                                            d="M7.744 1.777C7.886.918 8.163 1 8 1s.114.918.256 1.777C8.428 2.85 9.073 3.495 10.146 3.865c.859.29 1.716.452 2.164.832.227.194.27.424.162.625l-.218.425c-.201.391-.183.85.05 1.229l.344.551c.214.34.428.694.52 1.25.048.29-.022.6.216.756l.44.293c.277.185.347.458.204.664-.202.296-.51.49-.974.655-1.223.431-2.617.58-3.791.24-.712-.204-1.428-.506-2.029-.899-.607-.394-1.22-.843-1.688-1.503-.495-.705-.648-1.558-.553-2.39.043-.38-.031-.767-.282-1.077l-.44-.55c-.25-.313-.396-.708-.29-1.077.06-.214.288-.415.654-.515.539-.148 1.096-.218 1.83-.497 1.054-.4 1.758-1.082 2.05-2.008zM8.5 7h-1v2H7v1h2v-1h-.5V7z" />
+                                    </svg>
+                                </div>
+                                <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                    Dodgers-Brewers NLCS Game 1 FAQ (8 p.m. ET, TBS)
+                                </a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="me-3 mt-1 text-warning fw-bold fs-5">R</div>
+                                <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                    Chourio's hamstring almost 100%; Uribe brings DR pride to clinch
+                                </a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="me-3 mt-1" style="color: #002D56;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-baseball" viewBox="0 0 16 16">
+                                        <path
+                                            d="M7.744 1.777C7.886.918 8.163 1 8 1s.114.918.256 1.777C8.428 2.85 9.073 3.495 10.146 3.865c.859.29 1.716.452 2.164.832.227.194.27.424.162.625l-.218.425c-.201.391-.183.85.05 1.229l.344.551c.214.34.428.694.52 1.25.048.29-.022.6.216.756l.44.293c.277.185.347.458.204.664-.202.296-.51.49-.974.655-1.223.431-2.617.58-3.791.24-.712-.204-1.428-.506-2.029-.899-.607-.394-1.22-.843-1.688-1.503-.495-.705-.648-1.558-.553-2.39.043-.38-.031-.767-.282-1.077l-.44-.55c-.25-.313-.396-.708-.29-1.077.06-.214.288-.415.654-.515.539-.148 1.096-.218 1.83-.497 1.054-.4 1.758-1.082 2.05-2.008zM8.5 7h-1v2H7v1h2v-1h-.5V7z" />
+                                    </svg>
+                                </div>
+                                <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                    Alomar Sr., patriarch of iconic baseball family, passes away at 81
+                                </a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                < <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                    Thomson to return as Phillies' skipper in '26 (sources)
+                                    </a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="me-3 mt-1 text-warning fw-bold fs-5">SD</div>
+                                <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                    Padres manager Mike Shildt announces retirement
+                                </a>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="me-3 mt-1" style="color: #002D56;">
+
+                                    <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
+                                        Game times set for entire LCS round, including possible schedule changes
+                                    </a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="btn btn-outline-secondary mt-auto border-1 text-dark fw-bold shadow-none text-uppercase">More
+                            News</a>
+                    </div>
+                </div>
+
+                <div class="card p-3 shadow-sm">
+                    <div class="ratio ratio-16x9">
+                        <img src="slice.gif" alt="Video de bateador" class="img-fluid rounded">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100 p-3 shadow-sm border-danger border-2">
-                    <h3 class="h6 fw-bold text-danger mb-3">PRINCIPAL NEWS</h3>
+            <div class="col-lg-4">
+                <div class="card p-3 mb-4 shadow-sm">
+                    <h3 class="h5 fw-bold text-dark border-bottom pb-2 mb-3">Latest News</h3>
                     <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
-                                Dodgers confirm starting rotation for NLCS opener.
-                            </a>
-                            <small class="text-muted">3 min read</small>
+                        <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
+                            <div>Mariners-Blue Jays ALCS Game 2 FAQ, lineups (5 p.m. ET, FOX)</div>
                         </li>
-                        <li class="mb-3">
-                            <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
-                                Pitching Duel: Key matchups to watch in Game 1.
-                            </a>
-                            <small class="text-muted">1 hour ago</small>
+                        <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
+                            <div>Padres manager: Mike Shilt announces retirement</div>
                         </li>
-                        <li class="mb-3">
-                            <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
-                                Brewers' star player questionable for the series.
-                            </a>
-                            <small class="text-muted">Breaking: 15 min ago</small>
+                        <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
+                            <div>5 questions for Yankees after latest early postseason exit</div>
                         </li>
-                        <li class="mb-3">
-                            <a href="#" class="text-decoration-none text-dark fw-semibold d-block">
-                                Miguel Cabrera win triple crown.
-                            </a>
-                            <small class="text-muted">Breaking: 2 hour ago</small>
+                        <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
+                            <div>Start times announced for all LCS games</div>
+                        </li>
+                        <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
+                            <div>Tigers maintain faith in Hinch, confirm manager's contract extension</div>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-outline-danger btn-sm mt-auto">More News</a>
                 </div>
-            </div>
-        </div>
 
-        <div class="card p-3 shadow-sm">
-            <div class="ratio ratio-16x9">
-                <img src="slice.gif" alt="Video de bateador" class="img-fluid rounded">
-            </div>
-        </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card p-3 mb-4 shadow-sm">
-                <h3 class="h5 fw-bold text-dark border-bottom pb-2 mb-3">Latest News</h3>
-                <ul class="list-unstyled">
-                    <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
-                        <div>Mariners-Blue Jays ALCS Game 2 FAQ, lineups (5 p.m. ET, FOX)</div>
-                    </li>
-                    <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
-                        <div>Padres manager: Mike Shilt announces retirement</div>
-                    </li>
-                    <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
-                        <div>5 questions for Yankees after latest early postseason exit</div>
-                    </li>
-                    <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
-                        <div>Start times announced for all LCS games</div>
-                    </li>
-                    <li class="d-flex mb-2"><i class="fa-solid fa-baseball me-2 pt-1 text-danger"></i>
-                        <div>Tigers maintain faith in Hinch, confirm manager's contract extension</div>
-                    </li>
-                </ul>
-            </div>
+                <div class="card p-3 shadow-sm">
+                    <h3 class="h5 fw-bold text-dark border-bottom pb-2 mb-3">Postseason Guide</h3>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-2"><i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
+                            <div>Complete 2025 postseason schedule and updated bracket</div>
+                        </li>
+                        <li class="d-flex mb-2"><i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
+                            <div>Storylines to watch for ALCS Game 2, NLCS Game 1</div>
+                        </li>
+                        <li class="d-flex mb-2"><i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
+                            <div>Dodgers-Brewers NLCS position by position breakdown</div>
+                        </li>
+                        <li class="d-flex mb-2"><i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
+                            <div>Most career postseason home runs</div>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="card p-3 shadow-sm">
-                <h3 class="h5 fw-bold text-dark border-bottom pb-2 mb-3">Postseason Guide</h3>
-                <ul class="list-unstyled">
-                    <li class="d-flex mb-2"><i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
-                        <div>Complete 2025 postseason schedule and updated bracket</div>
-                    </li>
-                    <li class="d-flex mb-2"><i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
-                        <div>Storylines to watch for ALCS Game 2, NLCS Game 1</div>
-                    </li>
-                    <li class="d-flex mb-2"><i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
-                        <div>Dodgers-Brewers NLCS position by position breakdown</div>
-                    </li>
-                    <li class="d-flex mb-2"><i class="fa-solid fa-circle-info me-2 pt-1 text-primary"></i>
-                        <div>Most career postseason home runs</div>
-                    </li>
-                </ul>
             </div>
-
-        </div>
         </div>
     </main>
 

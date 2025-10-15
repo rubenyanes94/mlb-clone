@@ -1,33 +1,66 @@
  .navbar-primary {
-            background-color: #041E42; /* Azul oscuro de MLB */
-        }
-/* Estilo para la barra de noticias de última hora */
-.breaking-news-bar {
-    background-color: #C8102E; /* Rojo de MLB */
-    color: white;
-    font-weight: bold;
-    padding: 8px 15px;
-}
-/* Color para los enlaces activos/hover */
-.navbar-primary .nav-link:hover, .navbar-primary .nav-link.active {
+     background-color: #041E42;
+ }
+
+ .breaking-news-bar {
+     background-color: #C8102E;
+     color: white;
+     font-weight: bold;
+     padding: 8px 15px;
+ }
+
+ .navbar-primary .nav-link:hover,
+ .navbar-primary .nav-link.active {
      color: #ccc;
+ }
+
+ .game-card-container {
+     overflow-x: auto;
+     white-space: nowrap;
+     padding-bottom: 10px;
+ }
+
+ .game-card {
+     display: inline-block;
+     width: 200px;
+     border: 1px solid #ddd;
+     margin-right: 10px;
+     text-align: center;
+     padding: 15px;
+ }
+
+ main {
+     padding-top: 10px;
+ }
+
+ .nav-link-custom:hover, .nav-link-custom.active {
+    color: #007bff;
+}
+
+.dropdown-menu {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    color: #212529;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #041E42;
+}
+
+@media (min-width: 768px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+        margin-top: 0;
     }
-/* Estilo para el contenedor de juegos */
-.game-card-container {
-    overflow-x: auto; /* Permite desplazamiento horizontal en móviles */
-    white-space: nowrap; /* Evita que las tarjetas salten de línea */
-    padding-bottom: 10px;
-}
-/* Estilo base para cada tarjeta de juego */
-.game-card {
-    display: inline-block;
-    width: 200px; /* Ancho fijo para cada tarjeta de juego */
-    border: 1px solid #ddd;
-    margin-right: 10px;
-    text-align: center;
-    padding: 15px;
-}
-/* Estilo para el cuerpo principal para evitar que la barra de navegación flote demasiado */
-main {
-    padding-top: 10px;
+
+    .dropdown-toggle::after {
+        display: none;
+    }
 }
